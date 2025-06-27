@@ -243,6 +243,11 @@
         
         // Déclencher une première fois au chargement
         window.addEventListener('load', animateOnScroll);
+
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+});
     </script>
 </body>
 </html>

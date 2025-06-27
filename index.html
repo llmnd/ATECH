@@ -24,6 +24,11 @@
             <a href="contact.html" class="nav-link">Contact</a>
             <a href="Nous.html" class="nav-link">Nous</a>
             <a href="blog.html" class="nav-cta">Blog</a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+    <span class="hamburger"></span>
+</button>
         </div>
     </nav>
 
@@ -234,44 +239,12 @@
             &copy; 2025 ATECH IT Solutions. Tous droits réservés.
         </div>
     </footer>
-
-    <script>
-        lucide.createIcons();
-        document.querySelector('.nav-link.active').classList.add('active');
-        
-        // Animation au scroll
-        const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.service-card, .section-header, .feature-item');
-            
-            elements.forEach(element => {
-                const elementPosition = element.getBoundingClientRect().top;
-                const screenPosition = window.innerHeight / 1.2;
-                
-                if (elementPosition < screenPosition) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
-                }
-            });
-        };
-        
-        // Initialiser les éléments animés
-        document.querySelectorAll('.service-card, .section-header, .feature-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        });
-        
-        // Écouter l'événement scroll
-        window.addEventListener('scroll', animateOnScroll);
-        
-        // Déclencher une première fois au chargement
-        window.addEventListener('load', animateOnScroll);
-
-        // Boucle vidéo
-        document.querySelector('video').addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-    </script>
+   <script src="script.js"></script>
+   <script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>
 </body>
 </html>
