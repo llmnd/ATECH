@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ATECH-CYBERSECURITE Flyer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #f57c00;
+      text-align: center;
+      padding: 30px 15px 10px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+      color: #007BFF;
+    }
+
+    .section {
+      background: white;
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      color: #f57c00;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #f57c00;
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .grid img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .text-list {
+      flex: 1;
+      font-size: 16px;
+      color: #007BFF;
+    }
+
+    .text-list ul {
+      padding-left: 20px;
+      list-style-type: '✅ ';
+    }
+
+    .half {
+      flex: 1;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        flex-direction: column;
+      }
+
+      .text-list ul {
+        padding-left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ATECH-CYBERSECURITE</h1>
+    <p>VOUS PROPOSE</p>
+  </header>
+
+  <section class="section">
+    <div class="section-title">SÉCURITÉ PHYSIQUE</div>
+    <div class="grid">
+      <div class="half">
+        <img src="https://i.imgur.com/ybMM58w.jpg" alt="Caméras de sécurité"> <!-- lien d'exemple, tu peux remplacer -->
+      </div>
+      <div class="text-list">
+        <ul>
+          <li>Contrôle d'accès</li>
+          <li>Vidéo-surveillance</li>
+          <li>Protection des infrastructures</li>
+          <li>Alarmes et dispositifs anti-intrusion</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">SÉCURITÉ INFORMATIQUE</div>
+    <div class="grid">
+      <div class="half text-list">
+        <ul>
+          <li>Protection des réseaux</li>
+          <li>Sécurité des applications</li>
+          <li>Audit de sécurité</li>
+          <li>Réponse aux incidents</li>
+          <li>Sécurisation du Cloud et IoT</li>
+        </ul>
+      </div>
+      <div class="half">
+        <img src="https://i.imgur.com/Q2GiBb0.jpg" alt="Sécurité numérique"> <!-- image illustrative -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">FORMATION EN CYBERSÉCURITÉ</div>
+    <div class="grid">
+      <div class="half">
+        <img src="https://i.imgur.com/1tv96dH.jpg" alt="Formation cybersécurité"> <!-- image illustrative -->
+      </div>
+      <div class="text-list">
+        <ul>
+          <li>Initiation à la cybersécurité</li>
+          <li>Formations certifiantes</li>
+          <li>Hacking éthique</li>
+          <li>Gestion des incidents</li>
+          <li>Sécurité des données</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

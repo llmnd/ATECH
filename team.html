@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe | ATECH Cybersécurité</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Times+New+Roman:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <a href="index.html" class="logo">
+            <img src="atech.png" alt="ATECH Logo">
+            <span>ATECH Cybersécurité</span>
+        </a>
+        
+          <div class="nav-links">
+            <a href="index.html" class="nav-link active">Accueil</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="about.html" class="nav-link">À propos</a>
+            <a href="team.html" class="nav-link">Équipe</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="Nous.html" class="nav-link">Nous</a>
+            <a href="blog.html" class="nav-cta">Blog</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-subtitle">EXPERTS CERTIFIÉS</p>
+                <h1 class="hero-title">Rencontrez notre équipe d'experts</h1>
+                <p class="hero-desc">
+                    Une équipe pluridisciplinaire de passionnés, combinant certifications internationales et connaissance approfondie des enjeux de sécurité africains.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="team.jpg" alt="Équipe ATECH">
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="services">
+        <div class="section-header">
+            <h2 class="section-title">Notre leadership</h2>
+            <p class="section-desc">
+                Des dirigeants engagés dans l'excellence opérationnelle et l'innovation en sécurité
+            </p>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src="omar.jpg" alt="PDG ATECH">
+                    <div class="team-social">
+                        <a href="https://www.linkedin.com/company/atech-surete/"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <h3 class="team-name">Omar Aw</h3>
+                <p class="team-position">Fondateur & PDG</p>
+                <div class="team-bio">
+                    <p>15 ans d'expérience en cybersécurité offensive, ancien consultant chez Orange Cyberdefense. Certifications CISSP, OSCP, CEH.</p>
+                </div>
+                <div class="team-certifications">
+                    <span class="certification-badge">CISSP</span>
+                    <span class="certification-badge">OSCP</span>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-photo">
+                    <img src=".jpg" alt="Directeur Technique">
+                    <div class="team-social">
+                        <a href="https://www.linkedin.com/company/atech-surete/"><i data-lucide="linkedin"></i></a>
+                    </div>
+                </div>
+                <h3 class="team-name">Marie Fatou</h3>
+                <p class="team-position">Directrice Technique</p>
+                <div class="team-bio">
+                    <p>Spécialiste en architecture sécurisée et forensic, ancienne de l'ANSSI. Certifications CISM, ISO 27001 Lead Auditor.</p>
+                </div>
+                <div class="team-certifications">
+                    <span class="certification-badge">CISM</span>
+                    <span class="certification-badge">ISO 27001</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Team -->
+    <section class="services" style="background: var(--light-gray);">
+        <div class="section-header">
+            <h2 class="section-title">Nos experts</h2>
+            <p class="section-desc">
+                Des profils complémentaires couvrant tous les domaines de la sécurité
+            </p>
+        </div>
+        
+        <div class="team-grid">
+            <!-- Répéter ce bloc pour chaque expert -->
+            <div class="team-card team-expert">
+                <div class="team-photo">
+                    <img src="responsable.jpg" alt="Expert Pentest">
+                </div>
+                <h3 class="team-name">Ousmane Traoré</h3>
+                <p class="team-position">Responsable Pentest</p>
+                <div class="team-skills">
+                    <span>Tests d'intrusion</span>
+                    <span>OSINT</span>
+                    <span>Red Teaming</span>
+                </div>
+            </div>
+            <!-- Fin du bloc expert -->
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="cta-title">Rejoignez notre équipe</h2>
+            <p>Nous recrutons en permanence des talents passionnés par la cybersécurité. Envoyez-nous votre CV !</p>
+            <div class="cta-buttons">
+                <a href="contact.html?subject=Recrutement" class="btn btn-primary">Postuler</a>
+                <a href="#" class="btn btn-outline">Voir les offres</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <!-- ... (même footer que l'index) ... -->
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.querySelector('.nav-link.active').classList.add('active');
+    </script>
+</body>
+</html>
