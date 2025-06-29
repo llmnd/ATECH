@@ -1,150 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ATECH-CYBERSECURITE Flyer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f2f2f2;
-      color: #333;
-    }
-
-    header {
-      background-color: #f57c00;
-      text-align: center;
-      padding: 30px 15px 10px;
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-      font-weight: 900;
-    }
-
-    header p {
-      margin: 5px 0 0;
-      font-size: 16px;
-      color: #007BFF;
-    }
-
-    .section {
-      background: white;
-      margin: 20px auto;
-      max-width: 900px;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .section-title {
-      color: #f57c00;
-      font-size: 22px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #f57c00;
-      padding-bottom: 5px;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .grid img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .text-list {
-      flex: 1;
-      font-size: 16px;
-      color: #007BFF;
-    }
-
-    .text-list ul {
-      padding-left: 20px;
-      list-style-type: '✅ ';
-    }
-
-    .half {
-      flex: 1;
-    }
-
-    @media (max-width: 768px) {
-      .grid {
-        flex-direction: column;
-      }
-
-      .text-list ul {
-        padding-left: 15px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATECH-CYBERSECURITE - Services de Sécurité</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Times New Roman', 'serif'],
+                },
+            }
+        }
+    </script>
+    <style>
+        .orange-gradient {
+            background: linear-gradient(#d1780a 0%, #d1780a 100%);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50">
+    <!-- Header Orange -->
+    <header class="orange-gradient text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">ATECH-CYBERSECURITE</h1>
+            <p class="text-lg md:text-xl font-medium">Votre partenaire en sécurité globale</p>
+        </div>
+    </header>
 
-  <header>
-    <h1>ATECH-CYBERSECURITE</h1>
-    <p>VOUS PROPOSE</p>
-  </header>
+    <main class="container mx-auto px-4 py-8">
+        <!-- Section Services -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">NOS SERVICES EXCLUSIFS</h2>
+            
+            <!-- Sécurité Physique -->
+            <div class="service-card bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'); min-height: 200px;"></div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">SÉCURITÉ PHYSIQUE</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Contrôle d'accès intelligent</li>
+                            <li>Vidéosurveillance HD avec analyse comportementale</li>
+                            <li>Protection des infrastructures sensibles</li>
+                            <li>Systèmes d'alarme et dispositifs anti-intrusion</li>
+                            <li>Sécurité événementielle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sécurité Informatique -->
+            <div class="service-card bg-white rounded-xl shadow-md overflow-hidden mb-8">
+                <div class="md:flex flex-row-reverse">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'); min-height: 200px;"></div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">SÉCURITÉ INFORMATIQUE</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Protection des réseaux et pare-feu nouvelle génération</li>
+                            <li>Sécurisation des applications web et mobiles</li>
+                            <li>Audits de sécurité approfondis</li>
+                            <li>Réponse aux incidents cyber (CSIRT)</li>
+                            <li>Sécurisation du Cloud et IoT</li>
+                            <li>Tests d'intrusion et pentesting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Formation -->
+            <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0 md:w-1/3 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'); min-height: 200px;"></div>
+                    <div class="p-8 md:w-2/3">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">FORMATION EN CYBERSÉCURITÉ</h3>
+                        <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                            <li>Initiation à la cybersécurité pour tous les niveaux</li>
+                            <li>Formations certifiantes (ANSSI, ISO 27001, etc.)</li>
+                            <li>Hacking éthique et techniques de défense</li>
+                            <li>Gestion des incidents de sécurité</li>
+                            <li>Protection des données personnelles (RGPD)</li>
+                            <li>Ateliers pratiques en laboratoire sécurisé</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Contact -->
+        <section class="bg-gray-100 rounded-xl p-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">CONTACTEZ-NOUS</h2>
+            <p class="text-gray-600 mb-6">Nos experts sont à votre disposition pour évaluer vos besoins en sécurité</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="orange-gradient text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition">Demander un audit</a>
+                <a href="#" class="bg-white text-orange-600 border border-orange-600 px-6 py-3 rounded-lg font-medium hover:bg-orange-50 transition">Devis gratuit</a>
+            </div>
+        </section>
+    </main>
 
-  <section class="section">
-    <div class="section-title">SÉCURITÉ PHYSIQUE</div>
-    <div class="grid">
-      <div class="half">
-        <img src="https://i.imgur.com/ybMM58w.jpg" alt="Caméras de sécurité"> <!-- lien d'exemple, tu peux remplacer -->
-      </div>
-      <div class="text-list">
-        <ul>
-          <li>Contrôle d'accès</li>
-          <li>Vidéo-surveillance</li>
-          <li>Protection des infrastructures</li>
-          <li>Alarmes et dispositifs anti-intrusion</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title">SÉCURITÉ INFORMATIQUE</div>
-    <div class="grid">
-      <div class="half text-list">
-        <ul>
-          <li>Protection des réseaux</li>
-          <li>Sécurité des applications</li>
-          <li>Audit de sécurité</li>
-          <li>Réponse aux incidents</li>
-          <li>Sécurisation du Cloud et IoT</li>
-        </ul>
-      </div>
-      <div class="half">
-        <img src="https://i.imgur.com/Q2GiBb0.jpg" alt="Sécurité numérique"> <!-- image illustrative -->
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="section-title">FORMATION EN CYBERSÉCURITÉ</div>
-    <div class="grid">
-      <div class="half">
-        <img src="https://i.imgur.com/1tv96dH.jpg" alt="Formation cybersécurité"> <!-- image illustrative -->
-      </div>
-      <div class="text-list">
-        <ul>
-          <li>Initiation à la cybersécurité</li>
-          <li>Formations certifiantes</li>
-          <li>Hacking éthique</li>
-          <li>Gestion des incidents</li>
-          <li>Sécurité des données</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">© 2023 ATECH-CYBERSECURITE - Tous droits réservés</p>
+            <p class="text-gray-400">Solutions de sécurité intégrées pour protéger votre entreprise</p>
+        </div>
+    </footer>
 </body>
 </html>
